@@ -99,7 +99,10 @@ struct OHDPlatform {
   // qualcomm
   bool is_qrb5165() const;
   bool is_qcs405() const;
+  // orqa
   bool is_willy() const;
+  // luckfox
+  bool is_luckfox_lyra() const;
 };
 
 // We need to differentiate between rpi 4 and other pi's to use the right fec

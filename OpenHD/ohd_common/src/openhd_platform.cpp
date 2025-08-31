@@ -232,6 +232,8 @@ std::string x_platform_type_to_string(int platform_type) {
       return "RV1103";
     case X_PLATFORM_TYPE_ROCKCHIP_RV1106:
       return "RV1106";
+    case X_PLATFORM_TYPE_LUCKFOX_LYRA:
+      return "Luckfox Lyra";
     case X_PLATFORM_TYPE_WILLY:
       return "Willy";
     case X_PLATFORM_TYPE_ALWINNER_X20:
@@ -345,4 +347,8 @@ bool OHDPlatform::is_qcs405() const {
 
 bool OHDPlatform::is_qrb5165() const {
   return platform_type == X_PLATFORM_TYPE_QUALCOMM_QRB5165;
+}
+
+bool OHDPlatform::is_luckfox_lyra() const {
+  return platform_type == X_PLATFORM_TYPE_LUCKFOX_LYRA;
 }
